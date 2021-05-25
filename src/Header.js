@@ -7,9 +7,9 @@ function Header(){
     return(
         // BEM 
         <div className="header">
-            <PersonIcon />
+            <PersonIcon className="header__icon" fontSize="large" />
             <img className="header__logo" src="https://1000logos.net/wp-content/uploads/2018/07/tinder-emblem.jpg" alt="tinder logo"/>
-            <ForumIcon />
+            <ForumIcon className="header__icon" fontSize="large" />
         </div>
     )
 }
