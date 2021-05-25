@@ -11,7 +11,7 @@ function Header() {
             <IconButton>
                 <PersonIcon className="header__icon" fontSize="large" />
             </IconButton>
-            <img className="header__logo" src="https://1000logos.net/wp-content/uploads/2018/07/tinder-emblem.jpg" alt="tinder logo" />
+            <img className="header__logo" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ftous-logos.com%2Fwp-content%2Fuploads%2F2018%2F04%2Flogo-Tinder.png&f=1&nofb=1" alt="tinder logo" />
             <IconButton>
                 <ForumIcon className="header__icon" fontSize="large" />
             </IconButton>

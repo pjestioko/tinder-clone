@@ -10,8 +10,12 @@ function TinderCards() {
         },
         {
             name: 'Cardi B',
-            url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.glamour.com%2Fphotos%2F5ac94d17f8ce761b3774046b%2F16%3A9%2Fw_1280%2Cc_limit%2Fcardi-b-getty-2.jpg%3Fmbid%3Dsocial_retweet&f=1&nofb=1'
+            url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2020%2F03%2F19%2Fcardi-b-coronavirus_wide-15ee378d9aefdbd71894d3a2ad50332e8843a2c4-s1100.jpg&f=1&nofb=1'
         },
+        {
+            name: 'Pepe the Frog',
+            url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffsmedia.imgix.net%2Fd7%2Fc4%2F7d%2F30%2Fbb49%2F4dd1%2Fbd48%2F88338dfc87a3%2Fpepe-the-frog-2png.png&f=1&nofb=1',
+        }
     ]);
 
     // BAD
@@ -23,22 +27,22 @@ function TinderCards() {
 
     return (
         <div>
-            <h1>Tinder Cards</h1>
-
-            {people.map(person => (
-                <TinderCard
-                    className="swipe"
-                    key={person.name}
-                    preventSwipe={['up', 'down']}
-                >
-                    <div
-                        style={{ backgroundImage: `url(${person.url})` }}
-                        className="card"
+            <div className="tinderCards__cardContainer">
+                {people.map(person => (
+                    <TinderCard
+                        className="swipe"
+                        key={person.name}
+                        preventSwipe={['up', 'down']}
                     >
-                        <h3>{person.name}</h3>
-                    </div>
-                </TinderCard>
-            ))}
+                        <div
+                            style={{ backgroundImage: `url(${person.url})` }}
+                            className="card"
+                        >
+                            <h3>{person.name}</h3>
+                        </div>
+                    </TinderCard>
+                ))}
+            </div>
         </div>
     )
 }
