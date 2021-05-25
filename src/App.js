@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <h1>Hello World!</h1>
 
       {/*   Header   */}
+      <Header />
       {/*   Tinder Cards */}
       {/*   Buttons below Tinder cards */}
 
